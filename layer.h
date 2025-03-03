@@ -13,4 +13,20 @@ public:
     virtual ~Layer(){};
 };
 
+class Sigmoid : public Layer{
+
+};
+
+class Tanh : public Layer{
+
+};
+
+class ReLu : public Layer{
+
+};
+
+class LeakyReLu : public Layer{
+
+};
+
 #endif
