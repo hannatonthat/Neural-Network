@@ -3,8 +3,8 @@
 
 #include <vector>
 #include <string>
-#include "activation.cpp"
-#include "utils.cpp"
+#include "activation.h"
+#include "utils.h"
 class Layer{
 public:
     std::vector<double> input;

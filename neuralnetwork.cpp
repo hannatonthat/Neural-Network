@@ -12,6 +12,11 @@ std::vector<double> NeuralNetwork::forwardPropagate(const std::vector<double>& i
     return output;
 }
 
+std::vector<double> NeuralNetwork::predict(std::vector<double> input)
+    {
+        return forwardPropagate(input);
+    }
+
 void NeuralNetwork::backwardPropagate(const std::vector<double>& error, double learningRate){
     std::vector<double> gradError = error;
     for(auto it = layers.rbegin(); it != layers.rend(); it++){
