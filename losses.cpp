@@ -1,5 +1,4 @@
 #include "losses.h"
-#include "utils.cpp"
 
 double BCELoss(std::vector<double> pred, std::vector<double> target){
     double sum = 0;

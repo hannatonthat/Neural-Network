@@ -1,9 +1,10 @@
 #ifndef NEURALNETWORK_H
 #define NEURALNETWORK_H
 
-#include "layer.cpp"
 #include <vector>
 #include <iostream>
+#include "layer.cpp"
+#include "losses.cpp"
 class NeuralNetwork{
 public:
     std::vector<std::unique_ptr<Layer>> layers;

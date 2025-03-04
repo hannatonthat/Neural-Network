@@ -1,5 +1,4 @@
 #include "neuralnetwork.h"
-#include "losses.cpp"
 
 void NeuralNetwork::addLayer(Layer* layer){
     layers.emplace_back(layer);

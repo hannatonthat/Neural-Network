@@ -1,6 +1,4 @@
 #include "layer.h"
-#include "activation.cpp"
-#include "utils.cpp"
 
 std::vector<double> Sigmoid::forward(const std::vector<double>& inputData){
     input = inputData;
