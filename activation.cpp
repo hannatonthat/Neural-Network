@@ -1,6 +1,4 @@
 #include "activation.h"
-#include <vector>
-#include <cmath>
 
 std::vector<double> vectSigmoid(const std::vector<double>& x){
     std::vector<double> result;

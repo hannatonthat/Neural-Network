@@ -1,4 +1,3 @@
-#include <iostream>
 #include "utils.h"
 
 std::vector<double> elementWiseMultiplication(const std::vector<double>& a, const std::vector<double>&b){
