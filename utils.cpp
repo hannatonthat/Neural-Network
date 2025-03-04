@@ -35,7 +35,7 @@ std::vector<double> subtract(const std::vector<double>& a, const std::vector<dou
 
 double dotProduct(const std::vector<double>& a, const std::vector<double>&b){
     double result = 0;
-    for(int i = 0; i < a.size(); i++){
+    for(size_t i = 0; i < a.size(); i++){
         result += a[i] * b[i];
     }
     return result;
@@ -72,7 +72,7 @@ std::vector<double> biasInitializer(int size){
     std::random_device rd;
     std::mt19937 gen(rd());
     std::uniform_real_distribution<double> dist(-1.0, 1.0);
-    for(int i = 0; i < size; i++){
+    for(size_t i = 0; i < size; i++){
         bias[i] = dist(gen);
     }
     return bias;
