@@ -50,18 +50,18 @@ std::vector<double> vectReLuDerivative(const std::vector<double>& x){
     return result;
 }
 
-std::vector<double> vectLeakyReLu(const std::vector<double>& x, double alpha = 0.01){
+std::vector<double> vectLeakyReLu(const std::vector<double>& x){
     std::vector<double> result;
     for(double i : x){
-        result.push_back(i > 0 ? i : alpha * i);
+        result.push_back(i > 0 ? i : 0.01 * i);
     }
     return result;
 }
 
-std::vector<double> vectLeakyReLuDerivative(const std::vector<double>& x, double alpha = 0.01){
+std::vector<double> vectLeakyReLuDerivative(const std::vector<double>& x){
     std::vector<double> result;
     for(double i : x){
-        result.push_back(i > 0 ? 1 : alpha);
+        result.push_back(i > 0 ? 1 : 0.01);
     }
     return result;
 }

@@ -8,6 +8,9 @@
 #include "losses.h"
 class NeuralNetwork{
 public:
+    NeuralNetwork(){
+        std::cout<<"Hello"<<std::endl;
+    };
     std::vector<std::unique_ptr<Layer>> layers;
     void addLayer(Layer* layer);
     std::vector<double> forwardPropagate(const std::vector<double>& inputData);
